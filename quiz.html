@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="scripts/quiz.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+  </head>
+  <body>
+    <main>
+      <h1>Quiz Demo</h1>
+      <p>Answer the questions below then click "Check Answers" button to see your score</p>
+      <form name="myform" id="quiz" action="index.html" method="get">
+        <ol>
+          <li>
+            Question 1 - Light Painting is another name for what kind of photography?<br>
+            <label><input type="radio" name="q1" id="q11" value="portrait">Portrait<span> </span><br></label>
+            <label><input type="radio" name="q1" id="q12" value="landscape" checked>Landscape<span> </span><br></label>
+            <label><input type="radio" name="q1" id="q13" value="street">Street<span> </span><br></label>
+            <label><input type="radio" name="q1" id="q14" value="longexposure">Long Exposure<span> </span><br><br></label>
+          </li>
+
+          <li>
+            Question 2 - What is the stand used to stabilize photographs called?<br>
+            <label><input type="radio" name="q2" id="q21" value="table">Table<span> </span><br></label>
+            <label><input type="radio" name="q2" id="q22" value="tripod">Tripod<span> </span><br></label>
+            <label><input type="radio" name="q2" id="q23" value="stick">Stick<span> </span><br></label>
+            <label><input type="radio" name="q2" id="q24" value="hand" checked>Hand<span> </span><br><br></label>
+          </li>
+
+          <li>
+            Question 3 - What are the four styles of Photography mentioned on this website?<br>
+            <label><input type="checkbox" id="q3a1" value="landscape">Landscape<span></span><br></label>
+            <label><input type="checkbox" id="q3a2" value="portrait">Portrait<span></span><br></label>
+            <label><input type="checkbox" id="q3a3" value="longexposure">Long Exposure<span></span><br></label>
+            <label><input type="checkbox" id="q3a4" value="event">Event<span></span><br></label>
+            <label><input type="checkbox" id="q3a5" value="editorial">Editorial<span></span><br><br></label>
+          </li>
+
+          <li>
+            Question 4 - What settings need to be modified for long exposure shots?<br>
+            <label><input type="checkbox" id="q4a1" value="iso">ISO<span></span><br></label>
+            <label><input type="checkbox" id="q4a2" value="shutterspeed">Shutter Speed<span></span><br></label>
+            <label><input type="checkbox" id="q4a3" value="whitebalance">White Balance<span></span><br></label>
+            <label><input type="checkbox" id="q4a4" value="aperture">Aperture<span></span><br><br></label>
+          </li>
+
+          <li>
+            Question 5 - What class is this project for? (Hint: Answer is CS2800)<br>
+            <textarea name="comments" id="q5" rows="1" cols="20"></textarea><span> </span><br><br>
+          </li>  
+        </ol>
+        <p><input type="button" id="check" value="Check Answers"></p>
+        <p><input type="button" id="review" value="Review"></p>
+      </form>
+    </main>
+  </body>
+</html>
